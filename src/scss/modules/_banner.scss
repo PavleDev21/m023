@@ -1,0 +1,58 @@
+.banner {
+    position: relative;
+    padding-top: 37vh;
+    @extend %bc-img;
+    height: 100vh;
+    .wrapper {
+        z-index: 1;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($black, 0.7);
+    }
+}
+.banner-text {
+    position: relative;
+    text-align: center;
+}
+.banner-title {
+    position: relative;
+    color: $white;
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.banner-btn {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    padding: 17px 18px;
+    border-radius: 50%;
+    border: 1px solid $white;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+    .icon-icon-down-arrow {
+        font-size: 13px;
+        color: $white;
+    }
+}
+.banner-logo {
+    height: 32vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    opacity: 0.7;
+}

@@ -1,0 +1,121 @@
+.contact-us {
+    padding: 102px 0;
+    background-color: $wild-sand;
+    .wrapper {
+        font-size: 0;
+    }
+}
+.contact-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+.contact-form {
+    @extend %clearfix;
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+}
+.contact-title {
+    margin-bottom: 30px;
+    color: $cod-gray;
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+.contact-adress,
+.contact-phone,
+.contact-email {
+    display: block;
+    margin-bottom: 16px;
+    color: $cod-gray;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.contact-adress-link,
+.contact-phone-link,
+.contact-email-link {
+    color: $cod-gray;
+    opacity: 0.7;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+.contact-form-name {
+    margin-bottom: 32px;
+    border: 0;
+    background-color: $white;
+    padding: 14px 18px;
+    float: left;
+    width: 45%;
+    color: $cod-gray;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+.contact-form-email {
+    margin-bottom: 32px;
+    border: 0;
+    background-color: $white;
+    padding: 14px 18px;
+    float: right;
+    width: 45%;
+    color: $cod-gray;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+.contact-form-title {
+    margin-bottom: 28px;
+    border: 0;
+    background-color: $white;
+    padding: 14px 18px;
+    display: block;
+    width: 100%;
+    color: $cod-gray;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+.contact-txta {
+    margin-bottom: 27px;
+    height: 170px;
+    resize: none;
+    border: 0;
+    background-color: $white;
+    padding: 14px 18px;
+    display: block;
+    width: 100%;
+    color: $cod-gray;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+.contact-form-btn {
+    cursor: pointer;
+    padding: 19px 47px;
+    border: 0;
+    background-color: $mine-shaft;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 1;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}

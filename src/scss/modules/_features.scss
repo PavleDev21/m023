@@ -1,0 +1,69 @@
+.features {
+    position: relative;
+    background-color: $cod-gray;
+    padding: 97px 0;
+    .wrapper {
+        @extend %clearfix;
+    }
+}
+.feature-item {
+    font-size: 0;
+    display: inline-block;
+}
+.fleft {
+    float: left;
+}
+.fcenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.fright {
+    float: right;
+}
+.feature-icon {
+    padding-right: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    .icon-happiness {
+        margin-top: -2px;
+        font-size: 39px;
+        color: $white;
+    }
+    .icon-clock {
+        margin-top: -2px;
+        font-size: 39px;
+        color: $white;
+    }
+    .icon-icon-project {
+        margin-top: -2px;
+        font-size: 39px;
+        color: $white;
+    }
+}
+.feature-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ftext-center {
+    text-align: left;
+}
+.feature-number {
+    margin-bottom: 8px;
+    display: block;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.feature-title {
+    display: block;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
