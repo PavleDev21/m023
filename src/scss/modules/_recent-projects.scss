@@ -1,0 +1,86 @@
+.recent-projects {
+    padding: 85px 0px;
+    .wrapper {
+        @extend %clearfix;
+    }
+}
+.recent-proj-title {
+    margin-bottom: 63px;
+    color: $cod-gray;
+    text-align: center;
+    font-size: 39px;
+    line-height: 44px;
+    font-weight: 700;
+}
+.recent-proj-gallery {
+    font-size: 0;
+}
+.recent-gallery-item {
+    @extend %bc-img;
+    padding-bottom: 33.33%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+}
+.recent-gallery-link {
+    z-index: 2;
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    &:hover {
+        background-color: rgba($cod-gray, 0.7);
+        transition: 0.3s;
+    }
+}
+.recent-gallery-title {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: $white;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    opacity: 0;
+    transition: 0.3s;
+}
+.recent-gallery-link {
+    &:hover {
+        .recent-gallery-title {
+            opacity: 1;
+            transition: 0.3s;
+        }
+    }
+}
+.gallery-info {
+    margin-top: 10px;
+    color: $cod-gray;
+    font-size: 16px;
+    line-height: 18px;
+    float: right;
+    font-style: italic;
+}
+
+@include breakpoint(tablet) {
+    .recent-gallery-item {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+@include breakpoint(phone) {
+    .recent-gallery-item {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+        padding-bottom: 100%;
+    }
+}

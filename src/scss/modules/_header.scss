@@ -74,3 +74,9 @@
     color: $cod-gray;
     transition: 0.3s;
 }
+
+@include breakpoint(phone) {
+    .navigation {
+        display: none;
+    }
+}

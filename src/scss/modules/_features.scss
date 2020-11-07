@@ -36,7 +36,7 @@
         font-size: 39px;
         color: $white;
     }
-    .icon-icon-project {
+    .icon-hand-saw {
         margin-top: -2px;
         font-size: 39px;
         color: $white;
@@ -66,4 +66,55 @@
     line-height: 18px;
     letter-spacing: 1px;
     font-weight: 500;
+}
+
+@include breakpoint(tablet) {
+    .features {
+        text-align: center;
+        .wrapper {
+            font-size: 0;
+        }
+    }
+    .feature-item {
+        float: none;
+        display: inline-block;
+        width: 50%;
+    }
+    .feature-text {
+        text-align: left;
+    }
+    .fleft {
+        margin-bottom: 50px;
+    }
+    .fcenter {
+        margin-bottom: 50px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+}
+
+@include breakpoint(phone) {
+    .features {
+        text-align: center;
+    }
+    .feature-item {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .feature-text {
+        text-align: left;
+    }
+    .fleft {
+        margin-bottom: 50px;
+    }
+    .fcenter {
+        margin-bottom: 50px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translateX(-30px);
+    }
 }

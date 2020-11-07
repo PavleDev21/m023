@@ -119,3 +119,37 @@
         transition: 0.3s;
     }
 }
+
+@include breakpoint(tablet) {
+    .contact-text {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .contact-form {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@include breakpoint(phone) {
+    .contact-text {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .contact-form {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form-name,
+    .contact-form-email {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+}
