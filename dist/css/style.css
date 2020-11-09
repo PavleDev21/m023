@@ -102,6 +102,54 @@ textarea {
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../../src/fonts/PlayfairDisplay-Regular.eot");
+  src: url("../../src/fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../../src/fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../../src/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../../src/fonts/PlayfairDisplay-Italic.eot");
+  src: url("../../src/fonts/PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../../src/fonts/PlayfairDisplay-Italic.woff") format("woff"), url("../../src/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../../src/fonts/PlayfairDisplay-Medium.eot");
+  src: url("../../src/fonts/PlayfairDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/PlayfairDisplay-Medium.woff2") format("woff2"), url("../../src/fonts/PlayfairDisplay-Medium.woff") format("woff"), url("../../src/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../../src/fonts/PlayfairDisplay-MediumItalic.eot");
+  src: url("../../src/fonts/PlayfairDisplay-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/PlayfairDisplay-MediumItalic.woff2") format("woff2"), url("../../src/fonts/PlayfairDisplay-MediumItalic.woff") format("woff"), url("../../src/fonts/PlayfairDisplay-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../../src/fonts/PlayfairDisplay-BoldItalic.eot");
+  src: url("../../src/fonts/PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../../src/fonts/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../../src/fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../../src/fonts/PlayfairDisplay-Bold.eot");
+  src: url("../../src/fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../../src/fonts/PlayfairDisplay-Bold.woff") format("woff"), url("../../src/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
 /**
 iconfont Webfont
 */
@@ -167,6 +215,10 @@ Glyphs list
 .body {
   font-family: "Roboto";
   font-weight: 400; }
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: "Playfair Display"; }
 
 .header {
   z-index: 100;
@@ -257,19 +309,39 @@ Glyphs list
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(33, 33, 33, 0.7); }
+    background-color: rgba(0, 0, 0, 0.7); }
 
 .banner-text {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  width: 90%;
   text-align: center; }
+
+.banner-company-name {
+  text-transform: uppercase;
+  display: block;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 15px; }
 
 .banner-title {
   position: relative;
   color: #FFFFFF;
-  font-size: 45px;
+  font-size: 55px;
   line-height: 50px;
-  letter-spacing: 3px;
-  font-weight: 400; }
+  letter-spacing: 8px;
+  font-weight: 700; }
+
+.banner-span {
+  padding-top: 20px;
+  display: block;
+  font-style: italic;
+  font-weight: 500; }
 
 .banner-btn {
   position: absolute;
@@ -516,7 +588,7 @@ Glyphs list
   font-size: 42px;
   line-height: 48px;
   letter-spacing: -0.5px;
-  font-weight: 400; }
+  font-weight: 500; }
 
 .contact-adress,
 .contact-phone,

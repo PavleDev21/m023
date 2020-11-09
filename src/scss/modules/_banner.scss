@@ -13,20 +13,40 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba($mine-shaft, 0.7);
+        background-color: rgba($black, 0.7);
     }
 }
 .banner-text {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    width: 90%;
     text-align: center;
+}
+.banner-company-name {
+    text-transform: uppercase;
+    display: block;
+    color: $white;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 .banner-title {
     position: relative;
     color: $white;
-    font-size: 45px;
+    font-size: 55px;
     line-height: 50px;
-    letter-spacing: 3px;
-    font-weight: 400;
+    letter-spacing: 8px;
+    font-weight: 700;
+}
+.banner-span {
+    padding-top: 20px;
+    display: block;
+    font-style: italic;
+    font-weight: 500;
 }
 .banner-btn {
     position: absolute;
