@@ -8,11 +8,12 @@ function bannerBtn () {
 }
 
 function headerScroll() {
-    $header = $('.header');
-    $nav = $('.navigation');
-    $navLink = $('.nav-link');
-    $logoImgLight = $('.logo-img-light');
-    $logoImgDark = $('.logo-img-dark');
+    var $navToggleIcon = $('.nav-toggle-icon');
+    var $header = $('.header');
+    var $nav = $('.navigation');
+    var $navLink = $('.nav-link');
+    var $logoImgLight = $('.logo-img-light');
+    var $logoImgDark = $('.logo-img-dark');
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -22,6 +23,7 @@ function headerScroll() {
             $logoImgDark.addClass('logo-show');
             $logoImgLight.addClass('logo-hide');
             $nav.addClass('nav-scroll');
+            $navToggleIcon.addClass('toggle-color-change');
         }
         else {
             $header.removeClass('header-scroll');
@@ -29,6 +31,7 @@ function headerScroll() {
             $logoImgDark.removeClass('logo-show');
             $logoImgLight.removeClass('logo-hide');
             $nav.removeClass('nav-scroll');
+            $navToggleIcon.removeClass('toggle-color-change');
         }
     })
 }
@@ -68,6 +71,44 @@ function fillUp() {
     });
 }
 
+function navToggle() {
+  var $navToggle =  $('.nav-toggle');
+  var $navToggleIcon = $('.nav-toggle-icon');
+  var $navigation = $('.navigation');
+
+  $navToggle.on('click', function() {
+    $navToggleIcon.toggleClass('nav-toggle-active');
+    $navigation.toggleClass('nav-show');
+  })
+}
+
+function nav() {
+  var $navLink = $('.nav-link-scroll');
+  var $section = $('.js-section');
+  var $icon = $('.nav-toggle-icon');
+  var $navigation = $('.navigation');
+  var $navToggleIcon = $('.nav-toggle-icon');
+
+  $navLink.each(function(i) {
+  var $this = $(this);
+  $this.attr('data-scrollsec-index', i);
+  });
+  $section.each(function(i) {
+  $(this).attr('data-scrollsec-index', i);
+  });
+
+  $navLink.on('click', function() {
+  var index = $(this).data('scrollsec-index');
+      var sectionOffset = $('.js-section[data-scrollsec-index="'+ index + '"]').offset().top - 51;
+      $('html,body').stop().animate({scrollTop: sectionOffset}, 900);
+      $navigation.toggleClass('nav-show');
+      $navToggleIcon.toggleClass('nav-toggle-active');
+  });
+}
+
+
+nav();
+navToggle();
 headerScroll();
 bannerBtn();
 fillUp();

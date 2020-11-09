@@ -14,14 +14,19 @@
 }
 .recent-proj-gallery {
     font-size: 0;
+    margin: 0 -7px;
 }
 .recent-gallery-item {
-    @extend %bc-img;
-    padding-bottom: 33.33%;
+    padding: 7px;
     position: relative;
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
+}
+.recent-project-gallery-item-wrap {
+    position: relative;
+    @extend %bc-img;
+    padding-bottom: 100%;
 }
 .recent-gallery-link {
     z-index: 2;
@@ -52,6 +57,13 @@
     opacity: 0;
     transition: 0.3s;
 }
+.recent-project-watermark {
+    position: absolute;
+    right: 7px;
+    bottom: 5px;
+    height: 25px;
+    opacity: 0.7;
+}
 .recent-gallery-link {
     &:hover {
         .recent-gallery-title {
@@ -72,15 +84,12 @@
 @include breakpoint(tablet) {
     .recent-gallery-item {
         width: 50%;
-        padding-bottom: 50%;
     }
 }
 
 @include breakpoint(phone) {
     .recent-gallery-item {
-        margin-bottom: 10px;
         display: block;
         width: 100%;
-        padding-bottom: 100%;
     }
 }

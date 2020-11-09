@@ -11,21 +11,25 @@
         <div class="wrapper">
             <a href="index.html" class="logo-link">
                 <img src="src/images/logo-light.png" alt="logo-light" class="logo-img-light">
-                <img src="src/images/logo-black.png" alt="logo-dark" class="logo-img-dark">
+                <img src="src/images/logo-dark.png" alt="logo-dark" class="logo-img-dark">
             </a>
             <div class="navigation">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="javascript:;" class="nav-link">O nama</a>
+                        <a href="javascript:;" class="nav-link nav-link-scroll">O nama</a>
                     </li>
                     <li class="nav-item">
                         <a href="javascript:;" class="nav-link">Galerija</a>
                     </li>
                     <li class="nav-item">
-                        <a href="javascript:;" class="nav-link">Kontakt</a>
+                        <a href="javascript:;" class="nav-link">Katalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:;" class="nav-link nav-link-scroll">Kontakt</a>
                     </li>
                 </ul>
             </div>
+            <button class="nav-toggle"><span class="nav-toggle-icon"></span></button>
         </div>
     </header>
     <main class="main">
@@ -40,7 +44,7 @@
                 </button>
             </div>
         </div>
-        <div class="about-us">
+        <div class="about-us js-section">
             <div class="wrapper">
                 <h2 class="about-us-title">O našem preduzeću</h2>
                 <p class="about-us-subtitle">
@@ -86,41 +90,83 @@
             <div class="wrapper">
                 <h3 class="recent-proj-title">Skorašnji projekti</h3>
                 <div class="recent-proj-gallery">
-                    <div class="recent-gallery-item" style="background-image: url(src/images/bc-recent-proj-item1.jpg);">
-                        <a href="javascript:;" class="recent-gallery-link">
-                            <span class="recent-gallery-title">Persu</span>
-                        </a>
+                    <div class="recent-gallery-item">
+                        <div class="recent-project-gallery-item-wrap" style="background-image: url(src/images/bc-recent-proj-item1.jpg);">
+                            <a href="javascript:;" class="recent-gallery-link">
+                                <span class="recent-gallery-title">Persu</span>
+                            </a>
+                            <img src="src/images/logo-dark.png" alt="watermark" class="recent-project-watermark">
+                        </div>
                     </div>
-                    <div class="recent-gallery-item" style="background-image: url(src/images/bc-recent-proj-item2.jpg);">
-                        <a href="javascript:;" class="recent-gallery-link">
-                            <span class="recent-gallery-title">Gomex</span>
-                        </a>
+                    <div class="recent-gallery-item">
+                        <div class="recent-project-gallery-item-wrap" style="background-image: url(src/images/bc-recent-proj-item2.jpg);">
+                            <a href="javascript:;" class="recent-gallery-link">
+                                <span class="recent-gallery-title">Gomex</span>
+                            </a>
+                            <img src="src/images/logo-dark.png" alt="watermark" class="recent-project-watermark">
+                        </div>
                     </div>
-                    <div class="recent-gallery-item" style="background-image: url(src/images/bc-recent-proj-item1.jpg);">
-                        <a href="javascript:;" class="recent-gallery-link">
-                            <span class="recent-gallery-title">Varta</span>
-                        </a>
+                    <div class="recent-gallery-item">
+                        <div class="recent-project-gallery-item-wrap" style="background-image: url(src/images/bc-recent-proj-item1.jpg);">
+                            <a href="javascript:;" class="recent-gallery-link">
+                                <span class="recent-gallery-title">Varta</span>
+                            </a>
+                            <img src="src/images/logo-dark.png" alt="watermark" class="recent-project-watermark">
+                        </div>
                     </div>
-                    <div class="recent-gallery-item" style="background-image: url(src/images/bc-recent-proj-item1.jpg);">
-                        <a href="javascript:;" class="recent-gallery-link">
-                            <span class="recent-gallery-title">Persu</span>
-                        </a>
+                    <div class="recent-gallery-item">
+                        <div class="recent-project-gallery-item-wrap" style="background-image: url(src/images/bc-recent-proj-item1.jpg);">
+                            <a href="javascript:;" class="recent-gallery-link">
+                                <span class="recent-gallery-title">Persu</span>
+                            </a>
+                            <img src="src/images/logo-dark.png" alt="watermark" class="recent-project-watermark">
+                        </div>
                     </div>
-                    <div class="recent-gallery-item" style="background-image: url(src/images/bc-recent-proj-item2.jpg);">
-                        <a href="javascript:;" class="recent-gallery-link">
-                            <span class="recent-gallery-title">Gomex</span>
-                        </a>
+                    <div class="recent-gallery-item">
+                        <div class="recent-project-gallery-item-wrap" style="background-image: url(src/images/bc-recent-proj-item2.jpg);">
+                            <a href="javascript:;" class="recent-gallery-link">
+                                <span class="recent-gallery-title">Persu</span>
+                            </a>
+                            <img src="src/images/logo-dark.png" alt="watermark" class="recent-project-watermark">
+                        </div>
                     </div>
-                    <div class="recent-gallery-item" style="background-image: url(src/images/bc-recent-proj-item1.jpg);">
-                        <a href="javascript:;" class="recent-gallery-link">
-                            <span class="recent-gallery-title">Varta</span>
-                        </a>
+                    <div class="recent-gallery-item">
+                        <div class="recent-project-gallery-item-wrap" style="background-image: url(src/images/bc-recent-proj-item1.jpg);">
+                            <a href="javascript:;" class="recent-gallery-link">
+                                <span class="recent-gallery-title">Persu</span>
+                            </a>
+                            <img src="src/images/logo-dark.png" alt="watermark" class="recent-project-watermark">
+                        </div>
                     </div>
                 </div>
                 <span class="gallery-info">*Za slike svih projekata kliknite na polje galerija.</span>
             </div>
         </div>
-        <div class="contact-us">
+        <div class="order-tutorial">
+            <div class="wrapper">
+                <div class="tutorial-item">
+                    <div class="icon-catalog"></div>
+                    <span class="tutorial-title">1. Ponuda</span>
+                    <span class="tutorial-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae obcaecati, omnis tenetur ducimus</span>
+                </div>
+                <div class="tutorial-item">
+                    <div class="icon-icon-project"></div>
+                    <span class="tutorial-title">2. Projektovanje</span>
+                    <span class="tutorial-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae obcaecati, omnis tenetur ducimus</span>
+                </div>
+                <div class="tutorial-item">
+                    <div class="icon-furniture"></div>
+                    <span class="tutorial-title">3. Izrada nameštaja</span>
+                    <span class="tutorial-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae obcaecati, omnis tenetur ducimus</span>
+                </div>
+                <div class="tutorial-item">
+                    <div class="icon-shipped"></div>
+                    <span class="tutorial-title">4. Isporuka i montaža</span>
+                    <span class="tutorial-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae obcaecati, omnis tenetur ducimus</span>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us js-section">
             <div class="wrapper">
                 <div class="contact-text">
                     <h3 class="contact-title">Kontaktirajte nas:</h3>
@@ -140,7 +186,7 @@
     </main>
     <footer class="footer">
         <div class="wrapper">
-
+            <span class="footer-credit">2020 &copy; Code by <a href="javascript:;" class="footer-link">Pavle Baračkov</a></span>
         </div>
     </footer>
     <script src="src/js/jquery.js"></script>

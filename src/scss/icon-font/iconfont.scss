@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1604676424555');
-	src: url('../fonts/iconfont.eot?#iefix-1604676424555') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1604676424555') format('woff2'),
-		url('../fonts/iconfont.woff?1604676424555') format('woff'),
-		url('../fonts/iconfont.ttf?1604676424555') format('truetype');
+	src: url('../fonts/iconfont.eot?1604953346391');
+	src: url('../fonts/iconfont.eot?#iefix-1604953346391') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1604953346391') format('woff2'),
+		url('../fonts/iconfont.woff?1604953346391') format('woff'),
+		url('../fonts/iconfont.ttf?1604953346391') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -33,22 +33,34 @@ iconfont Webfont
 Glyphs list
 */
 
-.icon-clock::before {
+.icon-catalog::before {
 	content: '\ea01';
 }
 
-.icon-hand-saw::before {
+.icon-clock::before {
 	content: '\ea02';
 }
 
-.icon-happiness::before {
+.icon-furniture::before {
 	content: '\ea03';
 }
 
-.icon-icon-down-arrow::before {
+.icon-hand-saw::before {
 	content: '\ea04';
 }
 
-.icon-icon-project::before {
+.icon-happiness::before {
 	content: '\ea05';
+}
+
+.icon-icon-down-arrow::before {
+	content: '\ea06';
+}
+
+.icon-icon-project::before {
+	content: '\ea07';
+}
+
+.icon-shipped::before {
+	content: '\ea08';
 }

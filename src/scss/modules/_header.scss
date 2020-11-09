@@ -74,9 +74,103 @@
     color: $cod-gray;
     transition: 0.3s;
 }
+.nav-toggle {
+    display: none;
+    float: right;
+    margin-top: -8px;
+    position: relative;
+    height: 37px;
+    width: 37px;
+    border: 0;
+    background-color: transparent;
+}
+.nav-toggle-icon {
+    background-color: pink;
+    position: absolute;
+    top: 16px;
+    left: 3px;
+    width: 31px;
+    height: 5px;
+    transition: 0.3s;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -9px;
+        left: 0;
+        width: 31px;
+        height: 5px;
+        background-color: pink;
+        transition: 0.3s;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 31px;
+        height: 5px;
+        background-color: pink;
+        transition: 0.3s;
+    }
+}
+.toggle-color-change {
+    background-color: $mine-shaft;
+    transition: 0.3s;
+    &::before {
+        background-color: $mine-shaft;
+        transition: 0.3s;
+    }
+    &::after {
+        background-color: $mine-shaft;
+        transition: 0.3s;
+    }
+}
+.nav-toggle-active {
+    background-color: transparent;
+    transition: 0.3s;
+    &::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: 0.3s;
+    }
+    &::after {
+        transform: rotate(-45deg);
+        top: 0;
+        transition: 0.3s;
+    }
+}
 
 @include breakpoint(phone) {
+    .logo-img-light,
+    .logo-img-dark {
+        margin-top: 5px;
+    }
     .navigation {
-        display: none;
+        padding-top: 150px;
+        position: absolute;
+        right: -70%;
+        top: 0;
+        width: 70%;
+        height: 101vh;
+        background-color: $white;
+        transition: 0.3s;
+    }
+    .nav-show {
+        right: 0;
+        transition: 0.3s;
+    }
+    .nav-list {
+        padding-left: 20px;
+    }
+    .nav-item {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .nav-link {
+        font-size: 15px;
+        color: $mine-shaft;
+    }
+    .nav-toggle {
+        display: block;
     }
 }

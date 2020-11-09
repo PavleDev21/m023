@@ -45,8 +45,6 @@
 .banner-span {
     padding-top: 20px;
     display: block;
-    font-style: italic;
-    font-weight: 500;
 }
 .banner-btn {
     position: absolute;
@@ -66,5 +64,11 @@
     .icon-icon-down-arrow {
         font-size: 13px;
         color: $white;
+    }
+}
+
+@include breakpoint(phone) {
+    .banner-span {
+        padding-top: 8px;
     }
 }

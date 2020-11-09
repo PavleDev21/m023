@@ -1,0 +1,22 @@
+.footer {
+    padding: 17px 0;
+    text-align: center;
+}
+.footer-credit {
+    color: $mine-shaft;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.8;
+}
+.footer-link {
+    color: $mine-shaft;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 1;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+}
