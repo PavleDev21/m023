@@ -312,7 +312,7 @@ h4, h5, h6 {
   background-color: transparent; }
 
 .nav-toggle-icon {
-  background-color: pink;
+  background-color: #FFFFFF;
   position: absolute;
   top: 16px;
   left: 3px;
@@ -326,7 +326,7 @@ h4, h5, h6 {
     left: 0;
     width: 31px;
     height: 5px;
-    background-color: pink;
+    background-color: #FFFFFF;
     transition: 0.3s; }
   .nav-toggle-icon::after {
     content: '';
@@ -335,7 +335,7 @@ h4, h5, h6 {
     left: 0;
     width: 31px;
     height: 5px;
-    background-color: pink;
+    background-color: #FFFFFF;
     transition: 0.3s; }
 
 .toggle-color-change {
@@ -352,10 +352,12 @@ h4, h5, h6 {
   background-color: transparent;
   transition: 0.3s; }
   .nav-toggle-active::before {
+    background-color: #212121;
     transform: rotate(45deg);
     top: 0;
     transition: 0.3s; }
   .nav-toggle-active::after {
+    background-color: #212121;
     transform: rotate(-45deg);
     top: 0;
     transition: 0.3s; }

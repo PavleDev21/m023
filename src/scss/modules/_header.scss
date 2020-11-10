@@ -85,7 +85,7 @@
     background-color: transparent;
 }
 .nav-toggle-icon {
-    background-color: pink;
+    background-color: $white;
     position: absolute;
     top: 16px;
     left: 3px;
@@ -99,7 +99,7 @@
         left: 0;
         width: 31px;
         height: 5px;
-        background-color: pink;
+        background-color: $white;
         transition: 0.3s;
     }
     &::after {
@@ -109,7 +109,7 @@
         left: 0;
         width: 31px;
         height: 5px;
-        background-color: pink;
+        background-color: $white;
         transition: 0.3s;
     }
 }
@@ -129,11 +129,13 @@
     background-color: transparent;
     transition: 0.3s;
     &::before {
+        background-color: $mine-shaft;
         transform: rotate(45deg);
         top: 0;
         transition: 0.3s;
     }
     &::after {
+        background-color: $mine-shaft;
         transform: rotate(-45deg);
         top: 0;
         transition: 0.3s;

@@ -40,7 +40,6 @@ function fillUp() {
     $(window).scroll(function() {
         var a = 0;
         var oTop = $('.features').offset().top - window.innerHeight;
-        //console.log($('.features').offset().top);
         if (a == 0 && $(window).scrollTop() > oTop) {
           $('.feature-number').each(function() {
             var $this = $(this),
@@ -60,7 +59,6 @@ function fillUp() {
                 },
                 complete: function() {
                   $this.text(this.countNum);
-                  //alert('finished');
                 }
       
               });
