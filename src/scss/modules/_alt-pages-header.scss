@@ -1,0 +1,47 @@
+.alt-header {
+    position: relative;
+    background-color: $white;
+}
+.alt-nav-toggle-icon {
+    background-color: $mine-shaft;
+    &::before {
+        background-color: $mine-shaft;
+    }
+    &::after {
+        background-color: $mine-shaft;
+    }
+}
+.alt-nav-toggle-active {
+    background-color: transparent;
+    transition: 0.3s;
+    &::before {
+        background-color: $mine-shaft;
+        transform: rotate(45deg);
+        top: 0;
+        transition: 0.3s;
+    }
+    &::after {
+        background-color: $mine-shaft;
+        transform: rotate(-45deg);
+        top: 0;
+        transition: 0.3s;
+    }
+}
+.alt-logo {
+    display: block;
+}
+.alt-nav-link {
+    color: $cod-gray;
+}
+
+@include breakpoint(tablet) {
+    .alt-header {
+        position: fixed;
+    }
+}
+
+@include breakpoint(phone) {
+    .alt-header {
+        position: fixed;
+    }
+}

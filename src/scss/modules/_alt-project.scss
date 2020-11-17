@@ -1,0 +1,61 @@
+.alt-project {
+    padding: 70px 0;
+    background-color: $wild-sand;
+    .wrapper {
+        font-size: 0;
+    }
+}
+.alt-main-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+}
+.alt-basic-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+.alt-project-title {
+    margin-bottom: 35px;
+    color: $black;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+}
+.alt-project-subtitle {
+    width: 75%;
+    color: $cod-gray;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.alt-project-client {
+    display: block;
+    margin-bottom: 15px;
+    color: $black;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.alt-project-date {
+    display: block;
+    color: $black;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.alt-project-client-link,
+.alt-project-date-number {
+    font-weight: 400;
+}
+.alt-project-client-link {
+    color: $black;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 1;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}
