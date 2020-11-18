@@ -59,3 +59,39 @@
         transition: 0.3s;
     }
 }
+.alt-project-gallery {
+    padding: 50px 0;
+}
+.alt-gallery {
+    width: 33.33%;
+}
+
+@include breakpoint(tablet) {
+    .alt-body {
+        padding-top: 99px;
+    }
+}
+
+@include breakpoint(phone) {
+    .alt-body {
+        padding-top: 99px;
+    }
+    .alt-project {
+        text-align: center;
+    }
+    .alt-main-text {
+        display: block;
+        width: 100%;
+    }
+    .alt-project-subtitle {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .alt-basic-info {
+        display: block;
+        width: 100%;
+    }
+    .alt-gallery {
+        width: 50%;
+    }
+}
