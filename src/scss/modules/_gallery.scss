@@ -70,7 +70,7 @@
     background-color: transparent;
     &::before {
         content: '';
-        background-color: $mine-shaft;
+        background-color: $black;
         position: absolute;
         top: 18px;
         left: 1px;
@@ -80,7 +80,7 @@
     }
     &::after {
         content: '';
-        background-color: $mine-shaft;
+        background-color: $black;
         position: absolute;
         top: 18px;
         left: 1px;
@@ -90,26 +90,40 @@
     }
 }
 .gallery-overlay-next-btn {
+    border: 0;
     cursor: pointer;
     position: absolute;
-    bottom: 20%;
-    left: 52%;
-    transform: translateX(-50%);
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
     height: 40px;
     width: 40px;
-    border: 0;
-    background-color: red;
+    background-color: transparent;
+    .icon-next-arrow {
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        font-size: 30px;
+        color: $black;
+    }
 }
 .gallery-overlay-prevous-btn {
+    border: 0;
     cursor: pointer;
     position: absolute;
-    bottom: 20%;
-    left: 48%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
     height: 40px;
     width: 40px;
-    border: 0;
-    background-color: blue;
+    background-color: transparent;
+    .icon-previuous-arrow {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        font-size: 30px;
+        color: $black;
+    }
 }
 
 @include breakpoint(tablet) {

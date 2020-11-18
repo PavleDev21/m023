@@ -1,3 +1,4 @@
+jQuery.fn.reverse = [].reverse;
 function navToggle() {
     var $navToggle =  $('.nav-toggle');
     var $navToggleIcon = $('.nav-toggle-icon');
@@ -36,22 +37,32 @@ function gallery() {
     $nextBtn = $('.gallery-overlay-next-btn');
     $prevousBtn = $('.gallery-overlay-prevous-btn');
 
-    var src = "";
+    var nmbr = 0;
+    $galleryItem.reverse().each(function(i) {
+		$(this).attr('data-index', i+1);
+    });
     $galleryItem.on('click', function() {
-        src = $(this).data('src');
+        nmbr = $(this).data('index');
+        var src = "src/images/gallery-img-" + nmbr + ".jpg";
         $overlayImg.attr("src", src);
         $overlay.show();
     })
-    /*$nextBtn.on('click', function() {
-        src+1;
-        $overlayImg.attr("src", src);
-        console.log(src);
-    })
     $prevousBtn.on('click', function() {
-        src-1;
-        $overlayImg.attr("src", src);
-        console.log(src);
-    })*/
+        nmbr++;
+        if(nmbr>6) {
+            nmbr = 6;
+        }
+        var newSrc = "src/images/gallery-img-" + nmbr + ".jpg";
+        $overlayImg.attr("src", newSrc);
+    })
+    $nextBtn.on('click', function() {
+        nmbr--;
+        if(nmbr<1) {
+            nmbr = 1;
+        }
+        var newSrc = "src/images/gallery-img-" + nmbr + ".jpg";
+        $overlayImg.attr("src", newSrc);
+    })
     $closeBtn.on('click', function() {
         $overlay.hide();
     })

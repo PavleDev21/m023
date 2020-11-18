@@ -155,8 +155,8 @@ iconfont Webfont
 */
 @font-face {
   font-family: 'iconfont';
-  src: url("../fonts/iconfont.eot?1604953346391");
-  src: url("../fonts/iconfont.eot?#iefix-1604953346391") format("embedded-opentype"), url("../fonts/iconfont.woff2?1604953346391") format("woff2"), url("../fonts/iconfont.woff?1604953346391") format("woff"), url("../fonts/iconfont.ttf?1604953346391") format("truetype");
+  src: url("../fonts/iconfont.eot?1605665723324");
+  src: url("../fonts/iconfont.eot?#iefix-1605665723324") format("embedded-opentype"), url("../fonts/iconfont.woff2?1605665723324") format("woff2"), url("../fonts/iconfont.woff?1605665723324") format("woff"), url("../fonts/iconfont.ttf?1605665723324") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -200,8 +200,14 @@ Glyphs list
 .icon-icon-project::before {
   content: '\ea07'; }
 
-.icon-shipped::before {
+.icon-next-arrow::before {
   content: '\ea08'; }
+
+.icon-previuous-arrow::before {
+  content: '\ea09'; }
+
+.icon-shipped::before {
+  content: '\ea0a'; }
 
 .header .wrapper::before, .features .wrapper::before, .recent-projects .wrapper::before, .contact-form::before, .header .wrapper::after, .features .wrapper::after, .recent-projects .wrapper::after, .contact-form::after {
   content: '';
@@ -1007,7 +1013,7 @@ h4, h5, h6 {
   background-color: transparent; }
   .gallery-overlay-close-btn::before {
     content: '';
-    background-color: #212121;
+    background-color: #000000;
     position: absolute;
     top: 18px;
     left: 1px;
@@ -1016,7 +1022,7 @@ h4, h5, h6 {
     transform: rotate(45deg); }
   .gallery-overlay-close-btn::after {
     content: '';
-    background-color: #212121;
+    background-color: #000000;
     position: absolute;
     top: 18px;
     left: 1px;
@@ -1025,26 +1031,38 @@ h4, h5, h6 {
     transform: rotate(-45deg); }
 
 .gallery-overlay-next-btn {
+  border: 0;
   cursor: pointer;
   position: absolute;
-  bottom: 20%;
-  left: 52%;
-  transform: translateX(-50%);
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
   height: 40px;
   width: 40px;
-  border: 0;
-  background-color: red; }
+  background-color: transparent; }
+  .gallery-overlay-next-btn .icon-next-arrow {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    font-size: 30px;
+    color: #000000; }
 
 .gallery-overlay-prevous-btn {
+  border: 0;
   cursor: pointer;
   position: absolute;
-  bottom: 20%;
-  left: 48%;
-  transform: translateX(-50%);
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
   height: 40px;
   width: 40px;
-  border: 0;
-  background-color: blue; }
+  background-color: transparent; }
+  .gallery-overlay-prevous-btn .icon-previuous-arrow {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 30px;
+    color: #000000; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .alt-body {
