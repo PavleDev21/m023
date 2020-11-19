@@ -80,6 +80,29 @@
     float: right;
     font-style: italic;
 }
+.alt-project-btns {
+    padding: 10px 0 30px 0;
+    .wrapper {
+        @extend %clearfix;
+    }
+}
+.prev-page-btn,
+.next-page-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    color: $mine-shaft;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    display: block;
+    float: left;
+    padding: 9px 19px;
+}
+.next-page-btn {
+    float: right;
+}
 
 @include breakpoint(tablet) {
     .recent-gallery-item {
@@ -91,5 +114,16 @@
     .recent-gallery-item {
         display: block;
         width: 100%;
+    }
+    .alt-project-btns {
+        text-align: center;
+    }
+    .next-page-btn,
+    .prev-page-btn {
+        float: none;
+        display: inline-block;
+    }
+    .prev-page-btn {
+        margin-bottom: 20px;
     }
 }

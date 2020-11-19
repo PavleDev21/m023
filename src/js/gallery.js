@@ -68,6 +68,6 @@ function gallery() {
     })
 }
 
-gallery();
 navToggle();
 headerScroll();
+gallery();
