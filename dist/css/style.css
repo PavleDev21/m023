@@ -1197,3 +1197,39 @@ h4, h5, h6 {
     width: 100%; }
   .alt-gallery {
     width: 50%; } }
+
+.katalog-items {
+  padding: 40px 0; }
+  .katalog-items .wrapper {
+    font-size: 0; }
+
+.katalog-item {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 25%; }
+  .katalog-item .icon-icon-down-arrow {
+    font-size: 20px;
+    color: #000000;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s; }
+  .katalog-item .katalog-icon-transform {
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: 0.3s; }
+
+.katalog-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  font-size: 20px; }
+
+.katalog-content {
+  height: 400px;
+  width: 100%;
+  display: none; }
+
+.katalog-show {
+  display: block; }
