@@ -235,6 +235,40 @@ h1, h2, h3,
 h4, h5, h6 {
   font-family: "Playfair Display"; }
 
+.up {
+  z-index: 99;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: #212121;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s; }
+  .up:hover {
+    opacity: 0.7;
+    transition: 0.3s; }
+  .up .icon-icon-down-arrow {
+    transform: rotate(180deg);
+    font-size: 13px;
+    color: #FFFFFF; }
+
+.up-show {
+  visibility: visible;
+  opacity: 0.9;
+  transition: 0.3s; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .up {
+    right: 25px; } }
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .up {
+    right: 17px; } }
+
 .header {
   z-index: 100;
   position: fixed;
@@ -469,7 +503,6 @@ h4, h5, h6 {
   cursor: pointer;
   background-color: transparent;
   padding: 17px 18px;
-  border-radius: 50%;
   border: 1px solid #FFFFFF;
   transition: 0.3s; }
   .banner-btn:hover {
@@ -726,11 +759,25 @@ h4, h5, h6 {
     margin-bottom: 20px; } }
 
 .order-tutorial {
+  position: relative;
+  margin-top: 85px;
   padding: 60px 0;
   background-color: #212121;
   text-align: center; }
   .order-tutorial .wrapper {
     font-size: 0; }
+
+.order-tutorial-title {
+  font-size: 39px;
+  line-height: 44px;
+  font-weight: 700;
+  position: absolute;
+  top: -85px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF; }
 
 .tutorial-item {
   display: inline-block;

@@ -36,6 +36,24 @@ function headerScroll() {
     })
 }
 
+function up() {
+  var $up = $('.up')
+  $up.click(function() {
+    $('html,body').animate({
+        scrollTop: $(".body").offset().top-70},
+        900);
+  });
+
+  $(document).scroll(function() {
+    if($(this).scrollTop() > 350)
+    {
+     $up.addClass('up-show');
+    }else{
+         $up.removeClass('up-show');
+    }
+  });
+}
+
 function fillUp() {
     $(window).scroll(function() {
         var a = 0;
@@ -108,5 +126,6 @@ function nav() {
 nav();
 navToggle();
 headerScroll();
+up();
 bannerBtn();
 fillUp();

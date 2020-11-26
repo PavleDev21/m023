@@ -6,3 +6,43 @@ h1,h2,h3,
 h4,h5,h6 {
     font-family: $font2;
 }
+.up {
+    z-index: 99;
+    border: 1px solid $white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: $mine-shaft;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+    .icon-icon-down-arrow {
+        transform: rotate(180deg);
+        font-size: 13px;
+        color: $white;
+    }
+}
+.up-show {
+    visibility: visible;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+@include breakpoint(tablet) {
+    .up {
+        right: 25px;
+    }
+}
+
+@include breakpoint(phone) {
+    .up {
+        right: 17px;
+    }
+}
